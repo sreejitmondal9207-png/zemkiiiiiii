@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday 🎉</title>
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: white;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+.birthday-title {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.roast-text {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.main-photo {
+    max-width: 100%;
+    max-height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+.caption {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.balloon {
+    position: fixed;
+    bottom: -100px;
+    font-size: 3rem;
+    animation: float 10s linear infinite;
+}
+@keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-120vh); }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1 class="birthday-title">🎂 HAPPY BIRTHDAY 🎂</h1>
+<div class="roast-text">
+    So here is to another year,  you growing older and by older I mean tui buro hocchis . And look at the images...<br>how gladly you are spreading your negroness. You are so dark that even the black hole is scared of you.(Has another reason to be so...Ahm) The level of your extreme negroness and gayness can never be challenged. I hope you keep spreading ur negroness and gayness because that's why you are my hg , my girly . Keep slaying.<br> Keep being the queen that you are .  Happy birthday meow. (Vote na dile akhono minor tui btw)
+Apart from the roasts , man you're a grt frnd, a real guy , someone I trust a lot and I tbh cannot keep any secrets from yours truly negroness.<br> So please keep smiling keep being the way that you are and do tell us when you leak. We will provide you pads. Thank you...
+
+</div>
+
+<img src="Childhood2.jpeg">
+
+<div class="caption">🚲 Happiest birthday to yours truly red stone engineer. 🚲</div>
+
+</div>
+
+<script>
+const emojis = ["🎈","🎉","😈","🔥","🦍","🎂"];
+function createBalloon() {
+    const el = document.createElement("div");
+    el.className = "balloon";
+    el.textContent = emojis[Math.floor(Math.random()*emojis.length)];
+    el.style.left = Math.random()*100 + "vw";
+    el.style.animationDuration = (Math.random()*5 + 8) + "s";
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 12000);
+}
+setInterval(createBalloon, 500);
+</script>
+</body>
+</html>
