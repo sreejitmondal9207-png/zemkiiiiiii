@@ -16,17 +16,19 @@ body {
 .container {
     max-width: 1000px;
     margin: auto;
-    padding: 20px;
+    padding: 15px;
+    box-sizing: border-box;
 }
 .birthday-title {
-    font-size: 4rem;
+    font-size: clamp(2rem, 8vm, 4rem);
     font-weight: bold;
     background: linear-gradient(45deg, red, orange, yellow, green, blue, purple);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .roast-text {
-    font-size: 2rem;
+    font-size: clamp(1rem, 4vm, 2rem);
+    line-height: 1.5;
     font-weight: bold;
     margin: 30px 0;
 }
@@ -37,7 +39,7 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 .caption {
-    font-size: 2rem;
+    font-size: clamp(1rem, 4vm, 2rem);
     font-weight: bold;
     margin-top: 15px;
 }
@@ -51,6 +53,11 @@ body {
     from { transform: translateY(0); }
     to { transform: translateY(-120vh); }
 }
+@media (max-width: 600px){
+    .balloon{
+        font-size: 2rem;
+    }
+}
 </style>
 </head>
 <body>
@@ -62,7 +69,7 @@ Apart from the roasts , man you're a grt frnd, a real guy , someone I trust a lo
 
 </div>
 
-<img src="Childhood2.jpeg">
+<img src="Childhood2.jpeg" alt="Childhood Photo" class="main-photo">
 
 <div class="caption">🚲 Happiest birthday to yours truly red stone engineer. 🚲</div>
 
